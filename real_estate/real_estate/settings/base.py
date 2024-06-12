@@ -183,10 +183,20 @@ DJOSER = {
     "SERIALIZERS": {
         "user_create": "apps.users.serializers.CreateUserSerializer",
         "user": "apps.users.serializers.UserSerializer",
-        "current_user": "apps.users.serializers.CurrentUserSerializer",
-        "current_user": "apps.users.serializers.CurrentUserSerializer",
         "user_delete": "apps.users.serializers.UserDeleteSerializer",
     },
+}
+
+SWAGGER_SETTINGS = {
+    "SECURITY_DEFINITIONS": {
+        "Bearer": {
+            "type": "apiKey",
+            "name": "Authorization",
+            "in": "header",
+            "description": 'JWT Authorization header using the Bearer scheme. Example: "Authorization: Bearer {token}"',
+        }
+    },
+    "USE_SESSION_AUTH": False,
 }
 
 # Logging

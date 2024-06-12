@@ -34,6 +34,7 @@ class UserSerializer(serializers.ModelSerializer):
             "city",
             "top_seller",
         ]
+        ref_name = "CustomUserSerializer"
 
     def get_first_name(self, obj):
         return obj.first_name.title
