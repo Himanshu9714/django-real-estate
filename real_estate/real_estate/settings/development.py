@@ -10,4 +10,3 @@ DATABASES = {
         "PORT": env("PG_PORT"),
     }
 }
-
