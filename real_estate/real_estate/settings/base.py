@@ -46,6 +46,7 @@ THIRD_PARTY_APPS = [
     "phonenumber_field",
     "djoser",
     "rest_framework_simplejwt",
+    "drf_yasg",
 ]
 
 INHOUSE_APPS = [
