@@ -156,7 +156,7 @@ class Property(DefaultMixinModel):
 
     def save(self, *args, **kwargs):
         self.title = str.title(self.title)
-        self.description = str.title(self.description)
+        self.description = str.capitalize(self.description)
         self.ref_code = "".join(
             random.choices(
                 string.digits + string.ascii_lowercase + string.ascii_uppercase, k=20
