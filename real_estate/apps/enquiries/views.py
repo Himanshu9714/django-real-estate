@@ -1,5 +1,5 @@
-from django.core.mail import send_mail
 from django.conf import settings
+from django.core.mail import send_mail
 from rest_framework import permissions, status
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.response import Response
